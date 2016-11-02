@@ -26,9 +26,11 @@
     <!--about activity-->
     <string name="use_rules"><u>使用规则</u></string>
     <string name="project_data"><u>项目数据</u></string>
+    <string name="about_note"><u>重要说明</u></string>
     <string name="use_rules_content">本次应用只是针对2017届的校招薪水待遇\n\n规则一:提供查询薪水功能\n\n规则二:提供匿名爆料薪水功能，希望大家据实填写，真诚交流哈。\n\n规则三:提供打分评价功能，可信度初始为3，正面评价加一分，负面评价扣一分，低于0分以下的薪水不再展示</string>
     <string name="project_data_content">本着共享的原则，这里公开一下该项目的所有数据以及代码\n\n薪水条数:433条\n\n点评数据:3399条\n\n薪水浏览量(只统计了详情页面):466852</string>
     <string name="remark_hint">请输入offer详细信息，个人学历，是否special，如硕士 华为special16*16，五险一金，住房公积金等等</string>
+    <string name="about_note_content">OfferShow是根据校招薪水爆料网站(<a href="http://www.offershow.online:8000/">http://www.offershow.online:8000</a>)写的一个Android客户端App纯属方便用户浏览，对比Web端做了一些交互优化。项目已开源,欢迎大家拍砖,拍砖邮箱wangkrhust@163.com或者直接到git上提出意见，或者自己动手哈！\n git:<a href="https://github.com/wangkr/OfferShow">https://github.com/wangkr/OfferShow</a></string>
 
     <string-array name="comm_positions">
         <item>软件工程师</item>

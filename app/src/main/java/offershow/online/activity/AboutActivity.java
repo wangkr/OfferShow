@@ -35,4 +35,8 @@ public class AboutActivity extends BaseActivity {
     public void onClickProjectData(View view){
         EasyAlertDialogHelper.showOneButtonDiolag(this, "项目数据", getString(R.string.project_data_content), "确定", true, null);
     }
+
+    public void onClickAboutNote(View view) {
+        EasyAlertDialogHelper.showOneButtonDiolag(this, "重要说明", getString(R.string.about_note_content), "确定", true, null);
+    }
 }
