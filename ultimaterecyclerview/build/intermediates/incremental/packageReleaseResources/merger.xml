@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res"/><source path="F:\Android\projects\OfferShow\ultimaterecyclerview\build\generated\res\rs\release"/><source path="F:\Android\projects\OfferShow\ultimaterecyclerview\build\generated\res\resValues\release"/></dataSet><dataSet config="release$Generated" generated="true"><source path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\release\res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res"><file name="drag_frame" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\drawable\drag_frame.xml" qualifiers="" type="drawable"/><file name="timelinedefaultmarker" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\drawable\timelinedefaultmarker.xml" qualifiers="" type="drawable"/><file name="urv_floating_action_button_ic_fab_star" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\drawable-hdpi\urv_floating_action_button_ic_fab_star.png" qualifiers="hdpi-v4" type="drawable"/><file name="timelinedefaultmarker" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\drawable-v14\timelinedefaultmarker.xml" qualifiers="v14" type="drawable"/><file name="urv_floating_action_button_fab_bg_mini" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\drawable-xhdpi\urv_floating_action_button_fab_bg_mini.png" qualifiers="xhdpi-v4" type="drawable"/><file name="urv_floating_action_button_fab_bg_normal" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\drawable-xhdpi\urv_floating_action_button_fab_bg_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="urv_floating_action_button_fab_bg_mini" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\drawable-xxhdpi\urv_floating_action_button_fab_bg_mini.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="urv_floating_action_button_fab_bg_normal" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\drawable-xxhdpi\urv_floating_action_button_fab_bg_normal.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="bottom_progressbar" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\layout\bottom_progressbar.xml" qualifiers="" type="layout"/><file name="custom_recycler_view_layout" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\layout\custom_recycler_view_layout.xml" qualifiers="" type="layout"/><file name="empty_progressbar" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\layout\empty_progressbar.xml" qualifiers="" type="layout"/><file name="horizontal_recycler_view" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\layout\horizontal_recycler_view.xml" qualifiers="" type="layout"/><file name="slm_header" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\layout\slm_header.xml" qualifiers="" type="layout"/><file name="swipeable_ultimate_recycler_view_layout" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\layout\swipeable_ultimate_recycler_view_layout.xml" qualifiers="" type="layout"/><file name="ultimate_recycler_view_layout" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\layout\ultimate_recycler_view_layout.xml" qualifiers="" type="layout"/><file name="vertical_recycler_view" path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\layout\vertical_recycler_view.xml" qualifiers="" type="layout"/><file path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="AddFloatingActionButton">
+        <attr format="color" name="plusIconColor"/>
+    </declare-styleable><declare-styleable name="FloatingActionsMenu">
+        <attr format="color" name="addButtonColorPressed"/>
+        <attr format="color" name="addButtonColorNormal"/>
+        <attr format="color" name="addButtonPlusIconColor"/>
+        <attr format="boolean" name="addButtonIsHorizontal"/>
+    </declare-styleable><declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1"/>
+            <flag name="right" value="2"/>
+            <flag name="top" value="4"/>
+            <flag name="bottom" value="8"/>
+        </attr>
+        <attr format="dimension" name="leftEdgeSwipeOffset"/>
+        <attr format="dimension" name="rightEdgeSwipeOffset"/>
+        <attr format="dimension" name="topEdgeSwipeOffset"/>
+        <attr format="dimension" name="bottomEdgeSwipeOffset"/>
+        <attr format="enum" name="show_mode">
+            <enum name="lay_down" value="0"/>
+            <enum name="pull_out" value="1"/>
+        </attr>
+        <attr format="boolean" name="clickToClose"/>
+    </declare-styleable><declare-styleable name="UltimateRecyclerview">
+        <attr format="boolean" name="recyclerviewClipToPadding"/>
+        <attr format="dimension" name="recyclerviewPadding"/>
+        <attr format="dimension" name="recyclerviewPaddingTop"/>
+        <attr format="dimension" name="recyclerviewPaddingBottom"/>
+        <attr format="dimension" name="recyclerviewPaddingLeft"/>
+        <attr format="dimension" name="recyclerviewPaddingRight"/>
+        <attr format="reference" name="recyclerviewEmptyView"/>
+        <attr format="reference" name="recyclerviewFloatingActionView"/>
+        <attr format="enum" name="recyclerviewScrollbars">
+            <enum name="none" value="0"/>
+            <enum name="vertical" value="1"/>
+            <enum name="horizontal" value="2"/>
+        </attr>
+        <attr format="reference" name="recyclerviewDefaultSwipeColor"/>
+    </declare-styleable><declare-styleable name="FloatActionButton">
+        <attr format="color" name="urv_fab_colorPressed"/>
+        <attr format="color" name="urv_fab_colorNormal"/>
+        <attr format="float" name="urv_fab_alphaPressed"/>
+        <attr format="float" name="urv_fab_alphaNormal"/>
+        <attr name="icon"/>
+        <attr format="enum" name="urv_fab_size">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+            <enum name="noshadow" value="2"/>
+        </attr>
+    </declare-styleable><declare-styleable name="SwipeListView">
+        <attr format="boolean" name="swipeOpenOnLongPress"/>
+        <attr format="boolean" name="onlyOneOpenedWhenSwipe"/>
+        <attr format="integer" name="swipeAnimationTime"/>
+        <attr format="dimension" name="swipeOffsetLeft"/>
+        <attr format="dimension" name="swipeOffsetRight"/>
+        <attr format="boolean" name="swipeCloseAllItemsWhenMoveList"/>
+        <attr format="reference" name="swipeFrontView"/>
+        <attr format="reference" name="swipeBackView"/>
+        <attr format="enum" name="swipeMode">
+            <enum name="none" value="0"/>
+            <enum name="both" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="left" value="3"/>
+        </attr>
+        <attr format="enum" name="swipeActionLeft">
+            <enum name="reveal" value="0"/>
+            <enum name="dismiss" value="1"/>
+            <enum name="choice" value="2"/>
+        </attr>
+        <attr format="enum" name="swipeActionRight">
+            <enum name="reveal" value="0"/>
+            <enum name="dismiss" value="1"/>
+            <enum name="choice" value="2"/>
+        </attr>
+        <attr format="reference" name="swipeDrawableChecked"/>
+        <attr format="reference" name="swipeDrawableUnchecked"/>
+    </declare-styleable><declare-styleable name="timeline_style">
+        <attr format="color|reference" name="tls_marker"/>
+        <attr format="color|reference" name="tls_line"/>
+        <attr format="dimension" name="tls_marker_size"/>
+        <attr format="dimension" name="tls_line_size"/>
+    </declare-styleable></file><file path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\values\color.xml" qualifiers=""><color name="grey">#994d4d4d</color></file><file path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\values\dimens.xml" qualifiers=""><dimen name="fab_icon_size">24dp</dimen><dimen name="header_padding">8dp</dimen><dimen name="item_margin">16dp</dimen><dimen name="fab_stroke_width">0.5dp</dimen><dimen name="fab_shadow_offset">3dp</dimen><dimen name="fab_mini_shadow_size">6dp</dimen><dimen name="fab_size_mini">40dp</dimen><dimen name="fab_plus_icon_size">14dp</dimen><dimen name="fab_actions_spacing">16dp</dimen><dimen name="fab_plus_icon_stroke">2dp</dimen><dimen name="expand_size">8dp</dimen><dimen name="fab_min_significant_scroll">4dp</dimen><dimen name="fab_shadow_radius">9dp</dimen><dimen name="fab_size_normal">56dp</dimen><dimen name="fab_shadow_size">8dp</dimen></file><file path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\values\ids.xml" qualifiers=""><item name="fab_expand_menu_button" type="id"/><item name="exp_section_ripple_wrapper_click" type="id"/><item name="exp_section_notification_number" type="id"/><item name="exp_indication_arrow" type="id"/><item name="urv_main_progress_bar" type="id"/><item name="urv_main_list" type="id"/><item name="recyclerview_swipe" type="id"/><item name="exp_section_adjustment_layout" type="id"/><item name="exp_section_title" type="id"/></file><file path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">UltimateRecyclerView</string></file></source><source path="F:\Android\projects\OfferShow\ultimaterecyclerview\build\generated\res\rs\release"/><source path="F:\Android\projects\OfferShow\ultimaterecyclerview\build\generated\res\resValues\release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="F:\Android\projects\OfferShow\ultimaterecyclerview\src\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="SwipeListView"><attr format="boolean" name="swipeOpenOnLongPress"/><attr format="boolean" name="onlyOneOpenedWhenSwipe"/><attr format="integer" name="swipeAnimationTime"/><attr format="dimension" name="swipeOffsetLeft"/><attr format="dimension" name="swipeOffsetRight"/><attr format="boolean" name="swipeCloseAllItemsWhenMoveList"/><attr format="reference" name="swipeFrontView"/><attr format="reference" name="swipeBackView"/><attr format="enum" name="swipeMode"><enum name="none" value="0"/><enum name="both" value="1"/><enum name="right" value="2"/><enum name="left" value="3"/></attr><attr format="enum" name="swipeActionLeft"><enum name="reveal" value="0"/><enum name="dismiss" value="1"/><enum name="choice" value="2"/></attr><attr format="enum" name="swipeActionRight"><enum name="reveal" value="0"/><enum name="dismiss" value="1"/><enum name="choice" value="2"/></attr><attr format="reference" name="swipeDrawableChecked"/><attr format="reference" name="swipeDrawableUnchecked"/></declare-styleable><declare-styleable name="AddFloatingActionButton"><attr format="color" name="plusIconColor"/></declare-styleable><declare-styleable name="UltimateRecyclerview"><attr format="boolean" name="recyclerviewClipToPadding"/><attr format="dimension" name="recyclerviewPadding"/><attr format="dimension" name="recyclerviewPaddingTop"/><attr format="dimension" name="recyclerviewPaddingBottom"/><attr format="dimension" name="recyclerviewPaddingLeft"/><attr format="dimension" name="recyclerviewPaddingRight"/><attr format="reference" name="recyclerviewEmptyView"/><attr format="reference" name="recyclerviewFloatingActionView"/><attr format="enum" name="recyclerviewScrollbars"><enum name="none" value="0"/><enum name="vertical" value="1"/><enum name="horizontal" value="2"/></attr><attr format="reference" name="recyclerviewDefaultSwipeColor"/></declare-styleable><declare-styleable name="timeline_style"><attr format="color|reference" name="tls_marker"/><attr format="color|reference" name="tls_line"/><attr format="dimension" name="tls_marker_size"/><attr format="dimension" name="tls_line_size"/></declare-styleable><declare-styleable name="FloatingActionsMenu"><attr format="color" name="addButtonColorPressed"/><attr format="color" name="addButtonColorNormal"/><attr format="color" name="addButtonPlusIconColor"/><attr format="boolean" name="addButtonIsHorizontal"/></declare-styleable><declare-styleable name="SwipeLayout"><attr name="drag_edge"><flag name="left" value="1"/><flag name="right" value="2"/><flag name="top" value="4"/><flag name="bottom" value="8"/></attr><attr format="dimension" name="leftEdgeSwipeOffset"/><attr format="dimension" name="rightEdgeSwipeOffset"/><attr format="dimension" name="topEdgeSwipeOffset"/><attr format="dimension" name="bottomEdgeSwipeOffset"/><attr format="enum" name="show_mode"><enum name="lay_down" value="0"/><enum name="pull_out" value="1"/></attr><attr format="boolean" name="clickToClose"/></declare-styleable><declare-styleable name="FloatActionButton"><attr format="color" name="urv_fab_colorPressed"/><attr format="color" name="urv_fab_colorNormal"/><attr format="float" name="urv_fab_alphaPressed"/><attr format="float" name="urv_fab_alphaNormal"/><attr name="icon"/><attr format="enum" name="urv_fab_size"><enum name="normal" value="0"/><enum name="mini" value="1"/><enum name="noshadow" value="2"/></attr></declare-styleable></configuration></mergedItems></merger>

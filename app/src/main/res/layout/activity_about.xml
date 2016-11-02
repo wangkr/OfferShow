@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.AboutActivity">
+    <View
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/use_rules"
+        android:textColor="@color/color_blue_497bab"
+        android:textSize="@dimen/text_size_16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:onClick="onClickUseRules"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/project_data"
+        android:textColor="@color/color_blue_497bab"
+        android:textSize="@dimen/text_size_16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:onClick="onClickProjectData"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/color_gray_a9a9a9"
+        android:text="说明:OfferShow App是根据校招薪水爆料网站(http://www.offershow.online:8000/)写的一个客户端App纯属方便用户，对比Web端做了一些交互优化，欢迎大家拍砖。拍砖拍砖邮箱wangkrhust@163.com或者直接到git上提出意见，或者自己动手哈\ngit:"/>
+
+
+
+</RelativeLayout>

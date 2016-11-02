@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3e3f50"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_offer_item"
+                android:id="@+id/detail_company"/>
+            <include layout="@layout/layout_offer_item"
+                android:id="@+id/detail_position"/>
+            <include layout="@layout/layout_offer_item"
+                android:id="@+id/detail_city"/>
+            <include layout="@layout/layout_offer_item"
+                android:id="@+id/detail_salary"/>
+            <include layout="@layout/layout_offer_item"
+                android:id="@+id/detail_score"/>
+            <include layout="@layout/layout_offer_item"
+                android:id="@+id/detail_time"/>
+
+            <TextView
+                android:id="@+id/detail_remark"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/theme_bg2"/>
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/detail_dislike"
+            android:text="差评，不符实"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dislike_btn_bg"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/color_grey_555555"
+            />
+        <TextView
+            android:id="@+id/detail_like"
+            android:text="好评，很中肯"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/like_btn_bg"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>

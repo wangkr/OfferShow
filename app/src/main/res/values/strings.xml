@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">OfferShow</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="server_address">http://www.offershow.online:8080/</string>
+    
+    <!--api 接口-->
+    <string name="api_add_offer">webapi/jobrecord/</string>
+    <string name="api_get_offer">webapi/jobdetail/</string>
+    <string name="api_get_offer_all">webapi/jobtotal</string>
+    <string name="api_dislike_offer">webapi/jobdislike/</string>
+    <string name="api_like_offer">webapi/joblike/</string>
+
+    <string name="search_hint">搜索岗位、城市或公司</string>
+    <string name="company">公司名称:</string>
+    <string name="position">工作岗位:</string>
+    <string name="city">工作城市:</string>
+    <string name="salary">岗位薪水:</string>
+    <string name="kexindu">可信度评分:</string>
+    <string name="create_time">创建时间:</string>
+    <string name="salary_note">薪水备注:</string>
+
+    <!--offer info item-->
+    <string name="attr_kexindu">可信度:%1$d</string>
+    <string name="attr_liulan">浏览量:%1$d</string>
+
+    <!--about activity-->
+    <string name="use_rules"><u>使用规则</u></string>
+    <string name="project_data"><u>项目数据</u></string>
+    <string name="use_rules_content">本次应用只是针对2017届的校招薪水待遇\n\n规则一:提供查询薪水功能\n\n规则二:提供匿名爆料薪水功能，希望大家据实填写，真诚交流哈。\n\n规则三:提供打分评价功能，可信度初始为3，正面评价加一分，负面评价扣一分，低于0分以下的薪水不再展示</string>
+    <string name="project_data_content">本着共享的原则，这里公开一下该项目的所有数据以及代码\n\n薪水条数:433条\n\n点评数据:3399条\n\n薪水浏览量(只统计了详情页面):466852</string>
+    <string name="remark_hint">请输入offer详细信息，个人学历，是否special，如硕士 华为special16*16，五险一金，住房公积金等等</string>
+
+    <string-array name="comm_positions">
+        <item>软件工程师</item>
+        <item>算法工程师</item>
+        <item>测试工程师</item>
+        <item>硬件工程师</item>
+        <item>Java</item>
+        <item>C++</item>
+        <item>移动端开发工程师</item>
+        <item>Android</item>
+        <item>IOS</item>
+        <item>前端</item>
+        <item>后台开发工程师</item>
+        <item>游戏研发工程师</item>
+        <item>大数据</item>
+    </string-array>
+    <string-array name="comm_cities">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>杭州</item>
+        <item>武汉</item>
+        <item>成都</item>
+        <item>苏州</item>
+        <item>南京</item>
+        <item>合肥</item>
+    </string-array>
+    <string-array name="comm_companys">
+        <item>腾讯</item>
+        <item>百度</item>
+        <item>阿里</item>
+        <item>华为</item>
+        <item>360</item>
+        <item>网易</item>
+        <item>新浪</item>
+        <item>搜狐</item>
+        <item>微软</item>
+        <item>唯品会</item>
+        <item>科大讯飞</item>
+        <item>海康</item>
+        <item>滴滴</item>
+        <item>中兴</item>
+        <item>58</item>
+        <item>大疆</item>
+        <item>恒生</item>
+        <item>今日头条</item>
+        <item>京东</item>
+        <item>苏宁</item>
+        <item>乐视</item>
+        <item>美团</item>
+        <item>深信服</item>
+        <item>搜狗</item>
+        <item>小米</item>
+        <item>携程</item>
+        <item>招银</item>
+        <item>TP-LINK</item>
+    </string-array>
+</resources>

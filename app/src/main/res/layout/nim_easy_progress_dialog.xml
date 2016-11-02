@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_gravity="center"
+    android:background="@drawable/round_semigreen_background"
+    android:gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/easy_progress_bar"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:indeterminate="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            app:mlpb_progress_stoke_width="6dp"
+            app:mlpb_enable_circle_background="false"/>
+
+        <TextView
+            android:id="@+id/easy_progress_dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/easy_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

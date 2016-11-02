@@ -1,0 +1,41 @@
+<resources xmlns:app="http://schemas.android.com/res/com.rengwuxian.materialedittext.MaterialEditText">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="OfferItem"/>
+
+    <style name="OfferItem.TextView">
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="OfferItem.MatInputText">
+        <item name="met_baseColor">@color/color_333333</item>
+        <item name="met_primaryColor">@color/colorAccent</item>
+        <item name="met_textColorHint">@color/color_gray_a9a9a9</item>
+        <item name="met_floatingLabelTextColor">@color/color_333333</item>
+        <item name="met_floatingLabel">normal</item>
+        <item name="met_floatingLabelTextSize">@dimen/text_size_14</item>
+        <item name="met_textColor">@color/color_333333</item>
+        <item name="met_helperTextColor">@color/color_gray_a9a9a9</item>
+    </style>
+
+</resources>

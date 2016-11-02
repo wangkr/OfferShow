@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_main_menu_sort"
+        android:title="查询排序"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/sort_menu_icn"
+        android:orderInCategory="1"/>
+    <item android:id="@+id/menu_main_menu_group"
+        android:title="查询分类"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/group_menu_icn"
+        android:orderInCategory="2"/>
+    <item android:id="@+id/menu_main_menu_about"
+        android:title="更多"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/more_icon"
+        android:orderInCategory="3"/>
+</menu>
