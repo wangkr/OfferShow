@@ -29,7 +29,7 @@
 
     <style name="dialog_title_text_style">
         <item name="android:textSize">@dimen/big_text_size</item>
-        <item name="android:textColor">@color/color_activity_blue_bg</item>
+        <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:textStyle">bold</item>
         <item name="android:paddingLeft">@dimen/dialog_text_margin_horizontal</item>
         <item name="android:paddingRight">@dimen/dialog_text_margin_horizontal</item>

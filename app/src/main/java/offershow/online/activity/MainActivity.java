@@ -41,7 +41,7 @@ public class MainActivity extends BaseActivity implements AppBarLayout.OnOffsetC
     private AppBarLayout mAppBar;
     private Handler handler = new Handler();
 
-    private boolean mIsDarkSearchTheme = false;
+    private boolean mIsDarkSearchTheme = true;
 
     private String mLastQuery = "";
     @Override
@@ -135,6 +135,16 @@ public class MainActivity extends BaseActivity implements AppBarLayout.OnOffsetC
     }
 
     private void setupFloatingSearch() {
+        //demonstrate setting colors for items
+        mSearchView.setBackgroundColor(Color.parseColor("#484848"));
+        mSearchView.setViewTextColor(Color.parseColor("#e9e9e9"));
+        mSearchView.setHintTextColor(Color.parseColor("#e9e9e9"));
+        mSearchView.setActionMenuOverflowColor(Color.parseColor("#e9e9e9"));
+        mSearchView.setMenuItemIconColor(Color.parseColor("#e9e9e9"));
+        mSearchView.setLeftActionIconColor(Color.parseColor("#e9e9e9"));
+        mSearchView.setClearBtnColor(Color.parseColor("#e9e9e9"));
+        mSearchView.setDividerColor(Color.parseColor("#BEBEBE"));
+        mSearchView.setLeftActionIconColor(Color.parseColor("#e9e9e9"));
         mSearchView.setOnQueryChangeListener(new FloatingSearchView.OnQueryChangeListener() {
 
             @Override

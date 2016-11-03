@@ -144,13 +144,13 @@ public class AppCache {
         Collection<List<OfferInfo>> col = companyCategory.values();
         // 按公司简称分类
         for(String comp : companyCategory.keySet()){
-            if (temp.containsKey(comp)) {
-                temp.get(comp).addAll(companyCategory.get(comp));
+            if (temp.containsKey(comp.toUpperCase())) {
+                temp.get(comp.toUpperCase()).addAll(companyCategory.get(comp));
                 continue;
             }
             boolean flag = false;
             for(String src_key : company_src) {
-                if (comp.startsWith(src_key)) {
+                if (comp.toUpperCase().startsWith(src_key)) {
                     if (temp.containsKey(src_key)) {
                         temp.get(src_key).addAll(companyCategory.get(comp));
                     } else {
@@ -161,7 +161,7 @@ public class AppCache {
                 }
             }
             if (!flag){
-                temp.put(comp, companyCategory.get(comp));
+                temp.put(comp.toUpperCase(), companyCategory.get(comp));
             }
         }
 

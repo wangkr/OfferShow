@@ -89,10 +89,4 @@ public class BaseActivity extends AppCompatActivity {
         super.onPause();
         MobclickAgent.onPause(this);
     }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        HttpClientBase.getInstance().cancellAll();
-    }
 }

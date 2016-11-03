@@ -1,73 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:paddingTop="8dp">
-    <TextView
-        android:id="@+id/offer_item_company"
-        android:layout_width="140dp"
-        android:layout_height="20dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="10dp"
-        style="@style/OfferItem.TextView"/>
-
-    <TextView
-        android:id="@+id/offer_item_city"
-        android:layout_width="60dp"
-        android:layout_height="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@id/offer_item_company"
-        android:layout_marginStart="5dp"
-        style="@style/OfferItem.TextView"/>
-
-    <TextView
-        android:id="@+id/offer_item_position"
-        android:layout_width="130dp"
-        android:layout_height="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="10dp"
-        style="@style/OfferItem.TextView"
-        android:gravity="right|center_vertical"/>
-
-    <TextView
-        android:id="@+id/offer_item_score"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/offer_item_company"
-        android:textColor="@color/color_999999"
-        android:layout_marginStart="10dp"
-        android:textSize="10sp"
-        android:gravity="start|center_vertical"
-        android:layout_marginEnd="5dp"/>
-
-    <TextView
-        android:id="@+id/offer_item_number"
-        android:layout_width="90dp"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/offer_item_score"
-        android:layout_below="@id/offer_item_company"
-        android:textColor="@color/color_999999"
-        android:textSize="10sp"
-        android:gravity="start|center_vertical"
-        android:layout_marginEnd="10dp"/>
-
-
-    <TextView
-        android:id="@+id/offer_item_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@id/offer_item_company"
-        android:textColor="@color/color_999999"
-        android:textSize="10sp"
-        android:gravity="end|center_vertical"
-        android:layout_marginEnd="10dp"/>
-    <View
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:id="@+id/offer_item_cv"
         android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="@color/color_gray_a9a9a9"
-        android:layout_alignParentBottom="true"/>
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        app:cardBackgroundColor="@color/white"
+        app:contentPaddingTop="4dp"
+        app:contentPaddingLeft="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingBottom="5dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+        <TextView
+            android:id="@+id/offer_item_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical|start"
+            android:gravity="center_vertical|start"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/color_b3b3b3"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/offer_item_company"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="start|top"
+            style="@style/OfferItem.TextView"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/offer_item_city"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="start"
+            style="@style/OfferItem.TextView.SubText"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/offer_item_position"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="60dp"
+            style="@style/OfferItem.TextView.SubText"
+            android:gravity="start|center_vertical"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/offer_item_score"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:textColor="@color/color_split_line_cccccc"
+            android:layout_gravity="center_vertical|end"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/circle_bg_theme"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/offer_detail_eye"
+            android:layout_width="12dp"
+            android:layout_height="8dp"
+            android:background="@drawable/eye_icn"
+            android:layout_marginTop="38.5dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/offer_item_number"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:textColor="@color/color_999999"
+            android:textSize="10sp"
+            android:gravity="start|center_vertical"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="35dp"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/offer_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:textColor="@color/color_999999"
+            android:textSize="10sp"
+            android:gravity="start|center_vertical"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="35dp"
+            android:visibility="gone"/>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

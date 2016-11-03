@@ -277,7 +277,7 @@ public class OfferListPanel implements MainActivity.OnGroupMenuSelectListener, M
         currentAdapter = comAdapter;
         offerListView.swapAdapter(currentAdapter,false);
         currentAdapter.notifyDataSetChanged();
-        scrollToTop();
+        scrollToItem(0);
         sort_type = -1;
         group_type = 1;
     }
@@ -290,7 +290,7 @@ public class OfferListPanel implements MainActivity.OnGroupMenuSelectListener, M
         currentAdapter = cityAdapter;
         offerListView.swapAdapter(currentAdapter,false);
         currentAdapter.notifyDataSetChanged();
-        scrollToTop();
+        scrollToItem(0);
         sort_type = -1;
         group_type = 0;
     }
@@ -316,7 +316,7 @@ public class OfferListPanel implements MainActivity.OnGroupMenuSelectListener, M
         currentAdapter = sortAdapter;
         offerListView.swapAdapter(currentAdapter, false);
         currentAdapter.notifyDataSetChanged();
-        scrollToTop();
+        scrollToItem(0);
         sort_type = 0;
         group_type = -1;
     }
@@ -329,7 +329,7 @@ public class OfferListPanel implements MainActivity.OnGroupMenuSelectListener, M
         currentAdapter = sortAdapter;
         offerListView.swapAdapter(currentAdapter, false);
         currentAdapter.notifyDataSetChanged();
-        scrollToTop();
+        scrollToItem(0);
         sort_type = 1;
         group_type = -1;
     }
@@ -342,7 +342,7 @@ public class OfferListPanel implements MainActivity.OnGroupMenuSelectListener, M
         currentAdapter = sortAdapter;
         offerListView.swapAdapter(currentAdapter, false);
         currentAdapter.notifyDataSetChanged();
-        scrollToTop();
+        scrollToItem(0);
         sort_type = 2;
         group_type = -1;
     }

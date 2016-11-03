@@ -1,5 +1,6 @@
 package offershow.online.model.viewholder;
 
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.TextView;
 
@@ -24,7 +25,8 @@ public abstract class OfferViewHolderBase extends UltimateRecyclerviewViewHolder
     protected TextView score_tv;
     protected TextView number_tv;
     protected TextView time_tv;
-
+    protected TextView tag_tv;
+    protected View eye_v;
     public interface EventListener{
 
     }
@@ -54,39 +56,64 @@ public abstract class OfferViewHolderBase extends UltimateRecyclerviewViewHolder
         score_tv = findViewByIdEfficient(R.id.offer_item_score);
         number_tv = findViewByIdEfficient(R.id.offer_item_number);
         time_tv = findViewByIdEfficient(R.id.offer_item_time);
+        tag_tv = findViewByIdEfficient(R.id.offer_item_tag);
+        eye_v = findViewByIdEfficient(R.id.offer_detail_eye);
         inflateContentView();
     }
 
     protected final void refresh(Object _item){
         this.item = (OfferInfo)_item;
-        if ((item.getMask() & Constants.company_mask) != 0) {
+        if (!item.isTag() && (item.getMask() & Constants.company_mask) != 0) {
+            company_tv.setVisibility(View.VISIBLE);
             company_tv.setText(item.getCompany());
         } else {
             company_tv.setText("");
+            company_tv.setVisibility(View.GONE);
         }
 
-        if ((item.getMask() & Constants.position_mask) != 0) {
+        if (!item.isTag() && (item.getMask() & Constants.position_mask) != 0) {
+            position_tv.setVisibility(View.VISIBLE);
             position_tv.setText(item.getPosition());
         } else {
+            position_tv.setVisibility(View.GONE);
             position_tv.setText("");
         }
 
-        if ((item.getMask() & Constants.city_mask) != 0) {
+        if (!item.isTag() && (item.getMask() & Constants.city_mask) != 0) {
+            city_tv.setVisibility(View.VISIBLE);
             city_tv.setText(item.getCity());
         } else {
+            city_tv.setVisibility(View.GONE);
             city_tv.setText("");
         }
 
         if (!item.isTag()) {
-            getView().setBackgroundColor(getResources().getColor(R.color.transparent));
-            score_tv.setText(getContext().getString(R.string.attr_kexindu,item.getScore()));
-            number_tv.setText(getContext().getString(R.string.attr_liulan, item.getNumber()));
+            ((CardView)findViewByIdEfficient(R.id.offer_item_cv)).setCardBackgroundColor(getResources().getColor(R.color.white));
+            score_tv.setText(item.getScore()+"");
+            number_tv.setText(item.getNumber()+"");
             time_tv.setText(item.getTime());
+            score_tv.setVisibility(View.VISIBLE);
+            number_tv.setVisibility(View.VISIBLE);
+            time_tv.setVisibility(View.VISIBLE);
+            eye_v.setVisibility(View.VISIBLE);
+            tag_tv.setVisibility(View.GONE);
         } else {
+            if ((item.getMask() & Constants.position_mask) != 0) {
+                tag_tv.setText(item.getPosition());
+            } else if ((item.getMask() & Constants.company_mask) != 0) {
+                tag_tv.setText(item.getCompany());
+            } else if ((item.getMask() & Constants.city_mask) != 0) {
+                tag_tv.setText(item.getCity());
+            }
             score_tv.setText("");
             number_tv.setText("");
             time_tv.setText("");
-            getView().setBackgroundColor(getResources().getColor(R.color.color_b3b3b3));
+            score_tv.setVisibility(View.GONE);
+            number_tv.setVisibility(View.GONE);
+            time_tv.setVisibility(View.GONE);
+            eye_v.setVisibility(View.GONE);
+            tag_tv.setVisibility(View.VISIBLE);
+            ((CardView)findViewByIdEfficient(R.id.offer_item_cv)).setCardBackgroundColor(getResources().getColor(R.color.color_b3b3b3));
         }
 
         bindContentView();

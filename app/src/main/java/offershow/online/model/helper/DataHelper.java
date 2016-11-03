@@ -223,7 +223,8 @@ public class DataHelper {
 
     public static void  updateOfferInfoWrapperList(List<OfferInfo> ois){
         if (ois.size() > sOfferInfoWrappers.size()) {
-            for(int i = 0;i < ois.size() - sOfferInfoWrappers.size();i++){
+            int oiwSize = sOfferInfoWrappers.size();
+            for(int i = 0;i < ois.size() - oiwSize;i++){
                 OfferInfo oi = ois.get(i);
                 sOfferInfoWrappers.add(new OfferInfoWrapper(oi.getId(), oi.getCompany(), oi.getPosition(), oi.getCity()));
             }
