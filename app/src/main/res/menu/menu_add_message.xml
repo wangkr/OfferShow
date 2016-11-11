@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="留言"
+        app:showAsAction="always"
+        android:id="@+id/menu_detail_addmsg"
+        android:visible="true"
+        android:enabled="true"
+        android:checkable="true" />
+</menu>

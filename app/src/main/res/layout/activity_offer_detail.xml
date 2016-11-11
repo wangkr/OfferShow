@@ -5,40 +5,14 @@
     android:layout_height="match_parent"
     android:background="#3e3f50"
     >
-    <ScrollView
+    <ListView
+        android:id="@+id/detail_messages"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:orientation="vertical">
-
-            <include layout="@layout/layout_offer_item"
-                android:id="@+id/detail_company"/>
-            <include layout="@layout/layout_offer_item"
-                android:id="@+id/detail_position"/>
-            <include layout="@layout/layout_offer_item"
-                android:id="@+id/detail_city"/>
-            <include layout="@layout/layout_offer_item"
-                android:id="@+id/detail_salary"/>
-            <include layout="@layout/layout_offer_item"
-                android:id="@+id/detail_score"/>
-            <include layout="@layout/layout_offer_item"
-                android:id="@+id/detail_time"/>
-
-            <TextView
-                android:id="@+id/detail_remark"
-                android:textColor="@color/white"
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/theme_bg2"/>
-            <android.support.v4.widget.Space
-                android:layout_width="match_parent"
-                android:layout_height="70dp" />
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scrollbars="none"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="52dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"

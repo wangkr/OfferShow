@@ -12,8 +12,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.text.TextUtilsCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
@@ -34,6 +36,7 @@ import offershow.online.activity.NewOfferActivity;
 import offershow.online.common.http.HttpCommClient;
 import offershow.online.common.http.ICommProtocol;
 import offershow.online.common.util.sys.NetworkUtil;
+import offershow.online.config.AppConfig;
 import offershow.online.database.DBService;
 import offershow.online.model.adapter.OfferItemAdapter;
 import offershow.online.model.helper.DataHelper;
@@ -165,14 +168,40 @@ public class OfferListPanel implements MainActivity.OnGroupMenuSelectListener, M
         }
 
         offerListView.setRefreshing(true);
+        // 初始化token
+        if (TextUtils.isEmpty(AppConfig.token)) {
+            uiHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    HttpCommClient.getInstance().getToken(context.getString(R.string.appid),
+                            context.getString(R.string.appsecret),
+                            new ICommProtocol.CommCallback<String>() {
+                                @Override
+                                public void onSuccess(String s) {
+                                    AppConfig.token = s;
+                                    OfferShowApp.saveAccessToken(s);
+                                    messageLoader.isRefreshing = true;
+                                    messageLoader.onRefresh();
+                                }
 
-        uiHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                messageLoader.isRefreshing = true;
-                messageLoader.onRefresh();
-            }
-        },500);
+                                @Override
+                                public void onFailed(String code, String errorMsg) {
+                                    Toast.makeText(context, errorMsg,Toast.LENGTH_SHORT).show();
+                                    offerListView.setRefreshing(false);
+                                }
+                            });
+                }
+            },200);
+
+        } else {
+            uiHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    messageLoader.isRefreshing = true;
+                    messageLoader.onRefresh();
+                }
+            }, 500);
+        }
     }
 
     private MyHandler handler = new MyHandler(this);
@@ -463,6 +492,7 @@ public class OfferListPanel implements MainActivity.OnGroupMenuSelectListener, M
                         @Override
                         public void run() {
                             Toast.makeText(context, errorMsg, Toast.LENGTH_SHORT).show();
+                            onLoad();
                         }
                     });
                 }

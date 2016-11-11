@@ -44,12 +44,12 @@
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\layout\\ultimate_recycler_view_layout.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\src\\main\\res\\layout\\ultimate_recycler_view_layout.xml"
+    },
+    {
+        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",

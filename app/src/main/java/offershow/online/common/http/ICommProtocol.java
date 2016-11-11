@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONArray;
 
 import java.util.List;
 
+import offershow.online.model.MessageInfo;
 import offershow.online.model.OfferInfo;
 
 /**
@@ -31,5 +32,11 @@ public interface ICommProtocol extends OSHttpProtocol {
     void dislikeOfferInfo(int id,CommCallback<String> callback);
     /*薪水好评*/
     void likeOfferInfo(int id,CommCallback<String> callback);
+    /*留言*/
+    void addMessage(int id, String content, CommCallback<String> callback);
+    /*获取留言*/
+    void getMessages(int id, CommCallback<List<MessageInfo>> callback);
+    /*获取token*/
+    void getToken(String appid, String appSerect, CommCallback<String> callback);
 
 }

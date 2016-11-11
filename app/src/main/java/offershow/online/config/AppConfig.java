@@ -2,6 +2,7 @@ package offershow.online.config;
 
 import android.content.Context;
 
+import offershow.online.OfferShowApp;
 import offershow.online.R;
 
 /**
@@ -10,7 +11,9 @@ import offershow.online.R;
  */
 public class AppConfig {
     public static String server;
+    public static String token;
     public static void init(Context context){
         server = context.getString(R.string.server_address);
+        token = OfferShowApp.getAccessToken();
     }
 }

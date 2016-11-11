@@ -19,6 +19,10 @@ public interface OSHttpProtocol {
     String CODE_REMARK = "remark";
     String CODE_CITY = "city";
     String CODE_NUMBER = "number";
+    String CODE_CONTENT = "content";
+    String CODE_ACC_TOKEN = "access_token";
+    String CODE_APPID = "appid";
+    String CODE_APPSECRET = "appsecret";
 
     // request
 

@@ -12,6 +12,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 
+import offershow.online.model.MessageInfo;
 import offershow.online.model.OfferInfo;
 import offershow.online.model.helper.OfferSuggestion;
 
@@ -54,6 +55,38 @@ public class DBService {
             db.endTransaction();
             db.close();
         }
+    }
+
+    public void addOfferMessages(List<MessageInfo> messageInfos) {
+        SQLiteDatabase db = dbOpenHelper.getWritableDatabase();
+        db.beginTransaction();
+        try {
+            for (MessageInfo mi : messageInfos) {
+                db.execSQL("replace into offermessages values (?, ?, ?, ?)", new Object[]{mi.getId(), mi.getOfferid(), mi.getContent(), mi.getTime()});
+            }
+            db.setTransactionSuccessful();
+        } finally {
+            db.endTransaction();
+            db.close();
+        }
+    }
+
+    public LinkedList<MessageInfo> getMessages(int offerid){
+        SQLiteDatabase db = dbOpenHelper.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from offermessages where offerid=? order by id desc", new String[]{offerid+""});
+        LinkedList<MessageInfo> res = new LinkedList<>();
+        while (cursor.moveToNext()) {
+            MessageInfo mi = new MessageInfo();
+            mi.setOfferid(offerid);
+            mi.setId(cursor.getInt(cursor.getColumnIndex("_id")));
+            mi.setContent(cursor.getString(cursor.getColumnIndex("content")));
+            mi.setTime(cursor.getString(cursor.getColumnIndex("time")));
+            res.add(mi);
+        }
+
+        cursor.close();
+        db.close();
+        return res;
     }
 
     /**

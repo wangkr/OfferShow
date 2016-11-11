@@ -1,11 +1,11 @@
 [
     {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\switch_thumb_material_dark.xml",

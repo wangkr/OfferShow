@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/layout_offer_item"
+        android:id="@+id/detail_company"/>
+    <include layout="@layout/layout_offer_item"
+        android:id="@+id/detail_position"/>
+    <include layout="@layout/layout_offer_item"
+        android:id="@+id/detail_city"/>
+    <include layout="@layout/layout_offer_item"
+        android:id="@+id/detail_salary"/>
+    <include layout="@layout/layout_offer_item"
+        android:id="@+id/detail_score"/>
+    <include layout="@layout/layout_offer_item"
+        android:id="@+id/detail_time"/>
+
+    <TextView
+        android:id="@+id/detail_remark"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/theme_bg2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--薪资详情补充或留言--"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/color_999999"/>
+</LinearLayout>

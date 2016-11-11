@@ -1,14 +1,19 @@
 <resources>
     <string name="app_name">OfferShow</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="server_address">http://www.offershow.online:8080/</string>
+    <string name="server_address">http://www.offershow.online:8000/</string>
+    <string name="appid">your appid</string>
+    <string name="appsecret">your appsecret</string>
     
     <!--api 接口-->
     <string name="api_add_offer">webapi/jobrecord/</string>
     <string name="api_get_offer">webapi/jobdetail/</string>
-    <string name="api_get_offer_all">webapi/jobtotal</string>
+    <string name="api_get_offer_all">webapi/jobtotal/</string>
     <string name="api_dislike_offer">webapi/jobdislike/</string>
     <string name="api_like_offer">webapi/joblike/</string>
+    <string name="api_add_message">webapi/jobmessage/</string>
+    <string name="api_get_messages">webapi/jobmessagelist/</string>
+    <string name="api_get_token">webapi/gettoken/</string>
 
     <string name="search_hint">搜索岗位、城市或公司</string>
     <string name="company">公司名称:</string>

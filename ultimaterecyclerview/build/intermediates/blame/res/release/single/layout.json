@@ -168,20 +168,20 @@
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_multichoice_material.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\select_dialog_multichoice_material.xml"
-    },
-    {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_radio.xml"
+        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_multichoice_material.xml",
+        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
+        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",

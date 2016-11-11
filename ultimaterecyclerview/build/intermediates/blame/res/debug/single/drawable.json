@@ -48,10 +48,6 @@
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_edit_text_material.xml"
     },
@@ -68,12 +64,12 @@
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
@@ -136,19 +132,11 @@
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
     }
 ]

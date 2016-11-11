@@ -64,12 +64,12 @@
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_media_action.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_media_action.xml"
-    },
-    {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_expanded_menu_layout.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_media_action.xml",
+        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_select_dialog_material.xml",
@@ -96,12 +96,12 @@
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ultimate_recycler_view_layout.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\bundles\\debug\\res\\layout\\ultimate_recycler_view_layout.xml"
+    },
+    {
+        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_lines.xml",
@@ -148,12 +148,12 @@
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\horizontal_recycler_view.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\bundles\\debug\\res\\layout\\horizontal_recycler_view.xml"
-    },
-    {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\horizontal_recycler_view.xml",
+        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\bundles\\debug\\res\\layout\\horizontal_recycler_view.xml"
     },
     {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
@@ -176,12 +176,12 @@
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\bundles\\debug\\res\\layout\\empty_progressbar.xml"
     },
     {
-        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\vertical_recycler_view.xml",
-        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\bundles\\debug\\res\\layout\\vertical_recycler_view.xml"
-    },
-    {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\vertical_recycler_view.xml",
+        "source": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\bundles\\debug\\res\\layout\\vertical_recycler_view.xml"
     },
     {
         "merged": "F:\\Android\\projects\\OfferShow\\ultimaterecyclerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_icon.xml",

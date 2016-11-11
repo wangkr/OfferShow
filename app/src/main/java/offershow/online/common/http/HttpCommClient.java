@@ -14,6 +14,7 @@ import java.util.Map;
 import offershow.online.config.AppConfig;
 import offershow.online.OfferShowApp;
 import offershow.online.R;
+import offershow.online.model.MessageInfo;
 import offershow.online.model.OfferInfo;
 
 /**
@@ -30,6 +31,9 @@ public class HttpCommClient implements ICommProtocol{
     private static String API_GET_OFFER_ALL;
     private static String API_LIKE_OFFER;
     private static String API_DISLIKE_OFFER;
+    private static String API_ADD_MESSAGE;
+    private static String API_GET_MESSAGES;
+    private static String API_GET_TOKEN;
 
     private static HttpCommClient instance = null;
 
@@ -51,16 +55,23 @@ public class HttpCommClient implements ICommProtocol{
         API_GET_OFFER_ALL = OfferShowApp.getContext().getString(R.string.api_get_offer_all);
         API_LIKE_OFFER = OfferShowApp.getContext().getString(R.string.api_like_offer);
         API_DISLIKE_OFFER = OfferShowApp.getContext().getString(R.string.api_dislike_offer);
+        API_ADD_MESSAGE = OfferShowApp.getContext().getString(R.string.api_add_message);
+        API_GET_MESSAGES = OfferShowApp.getContext().getString(R.string.api_get_messages);
+        API_GET_TOKEN = OfferShowApp.getContext().getString(R.string.api_get_token);
     }
 
     @Override
     public void likeOfferInfo(int id, final CommCallback<String> callback) {
-        String url = AppConfig.server + API_LIKE_OFFER + id;
+        String url = AppConfig.server + API_LIKE_OFFER;
 
         Map<String, String> headers = new HashMap<>(1);
         headers.put(HEADER_CONTENT_TYPE, "application/x-www-form-urlencoded; charset=utf-8");
 
-        HttpClientBase.getInstance().execute(url, headers, null, new HttpClientBase.JoyHttpCallback() {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put(CODE_ID, id);
+        jsonObject.put(CODE_ACC_TOKEN, AppConfig.token);
+
+        HttpClientBase.getInstance().execute(url, headers, jsonObject, new HttpClientBase.JoyHttpCallback() {
             @Override
             public void onResponse(String response, int code, String errorMsg) {
                 if (code != 0) {
@@ -83,17 +94,21 @@ public class HttpCommClient implements ICommProtocol{
                     callback.onFailed("0", resObj.getString(RESULT_MSG));
                 }
             }
-        }, false, true);
+        }, true, true);
     }
 
     @Override
     public void dislikeOfferInfo(int id, final CommCallback<String> callback) {
-        String url = AppConfig.server + API_DISLIKE_OFFER + id;
+        String url = AppConfig.server + API_DISLIKE_OFFER ;
 
         Map<String, String> headers = new HashMap<>(1);
         headers.put(HEADER_CONTENT_TYPE, "application/x-www-form-urlencoded; charset=utf-8");
 
-        HttpClientBase.getInstance().execute(url, headers, null, new HttpClientBase.JoyHttpCallback() {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put(CODE_ID, id);
+        jsonObject.put(CODE_ACC_TOKEN, AppConfig.token);
+
+        HttpClientBase.getInstance().execute(url, headers, jsonObject, new HttpClientBase.JoyHttpCallback() {
             @Override
             public void onResponse(String response, int code, String errorMsg) {
                 if (code != 0) {
@@ -116,7 +131,7 @@ public class HttpCommClient implements ICommProtocol{
                     callback.onFailed("0", resObj.getString(RESULT_MSG));
                 }
             }
-        }, false, true);
+        }, true, true);
     }
 
     @Override
@@ -125,8 +140,10 @@ public class HttpCommClient implements ICommProtocol{
 
         Map<String, String> headers = new HashMap<>(1);
         headers.put(HEADER_CONTENT_TYPE, "application/x-www-form-urlencoded; charset=utf-8");
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put(CODE_ACC_TOKEN, AppConfig.token);
 
-        HttpClientBase.getInstance().execute(url, headers, null, new HttpClientBase.JoyHttpCallback() {
+        HttpClientBase.getInstance().execute(url, headers, jsonObject, new HttpClientBase.JoyHttpCallback() {
             @Override
             public void onResponse(String response, int code, String errorMsg) {
                 if (code != 0) {
@@ -156,17 +173,21 @@ public class HttpCommClient implements ICommProtocol{
                     callback.onFailed("0", resObj.getString(RESULT_MSG));
                 }
             }
-        }, false, false);
+        }, true, false);
     }
 
     @Override
     public void getOfferInfo(int id,final CommCallback<OfferInfo> callback) {
-        String url = AppConfig.server + API_GET_OFFER + id;
+        String url = AppConfig.server + API_GET_OFFER;
 
         Map<String, String> headers = new HashMap<>(1);
         headers.put(HEADER_CONTENT_TYPE, "application/x-www-form-urlencoded; charset=utf-8");
 
-        HttpClientBase.getInstance().execute(url, headers, null, new HttpClientBase.JoyHttpCallback() {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put(CODE_ID, id);
+        jsonObject.put(CODE_ACC_TOKEN, AppConfig.token);
+
+        HttpClientBase.getInstance().execute(url, headers, jsonObject, new HttpClientBase.JoyHttpCallback() {
             @Override
             public void onResponse(String response, int code, String errorMsg) {
                 if (code != 0) {
@@ -189,7 +210,7 @@ public class HttpCommClient implements ICommProtocol{
                     callback.onFailed("0", resObj.getString(RESULT_MSG));
                 }
             }
-        }, false, true);
+        }, true, true);
     }
 
     @Override
@@ -205,6 +226,7 @@ public class HttpCommClient implements ICommProtocol{
         jo.put(CODE_POSITION, oi.getPosition());
         jo.put(CODE_REMARK, oi.getRemark());
         jo.put(CODE_SALARY, oi.getSalary());
+        jo.put(CODE_ACC_TOKEN, AppConfig.token);
 
         HttpClientBase.getInstance().execute(url, headers, jo, new HttpClientBase.JoyHttpCallback() {
             @Override
@@ -225,6 +247,121 @@ public class HttpCommClient implements ICommProtocol{
                 int code1 = resObj.getIntValue(RESULT_CODE);
                 if (code1 == 1){
                     callback.onSuccess(null);
+                } else {
+                    callback.onFailed("0", resObj.getString(RESULT_MSG));
+                }
+            }
+        }, true, true);
+    }
+
+    @Override
+    public void addMessage(int id, String content,final CommCallback<String> callback) {
+        String url = AppConfig.server + API_ADD_MESSAGE;
+
+        Map<String, String> headers = new HashMap<>(1);
+        headers.put(HEADER_CONTENT_TYPE, "application/x-www-form-urlencoded; charset=utf-8");
+
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put(CODE_ID, id);
+        jsonObject.put(CODE_CONTENT, content);
+        jsonObject.put(CODE_ACC_TOKEN, AppConfig.token);
+
+        HttpClientBase.getInstance().execute(url, headers, jsonObject, new HttpClientBase.JoyHttpCallback() {
+            @Override
+            public void onResponse(String response, int code, String errorMsg) {
+                if (code != 0) {
+                    Log.e(TAG, "add message failed : code = " + code + ", errorMsg = " + errorMsg);
+                    if (callback != null) {
+                        callback.onFailed("" + code, errorMsg);
+                    }
+                    return;
+                }
+
+                if (callback == null) {
+                    return;
+                }
+
+                JSONObject resObj = JSONObject.parseObject(response);
+                int code1 = resObj.getIntValue(RESULT_CODE);
+                if (code1 == 1){
+                    callback.onSuccess(resObj.getString(RESULT_MSG));
+                } else {
+                    callback.onFailed("0", resObj.getString(RESULT_MSG));
+                }
+            }
+        }, true, true);
+    }
+
+    @Override
+    public void getMessages(int id,final CommCallback<List<MessageInfo>> callback) {
+        String url = AppConfig.server + API_GET_MESSAGES;
+
+        Map<String, String> headers = new HashMap<>(1);
+        headers.put(HEADER_CONTENT_TYPE, "application/x-www-form-urlencoded; charset=utf-8");
+
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put(CODE_ID, id);
+        jsonObject.put(CODE_ACC_TOKEN, AppConfig.token);
+
+        HttpClientBase.getInstance().execute(url, headers, jsonObject, new HttpClientBase.JoyHttpCallback() {
+            @Override
+            public void onResponse(String response, int code, String errorMsg) {
+                if (code != 0) {
+                    Log.e(TAG, "get messagelist failed : code = " + code + ", errorMsg = " + errorMsg);
+                    if (callback != null) {
+                        callback.onFailed("" + code, errorMsg);
+                    }
+                    return;
+                }
+
+                if (callback == null) {
+                    return;
+                }
+
+                JSONObject resObj = JSONObject.parseObject(response);
+                int code1 = resObj.getIntValue(RESULT_CODE);
+                if (code1 == 1){
+                    List<MessageInfo> res = new ArrayList<>();
+                    JSONArray ja = resObj.getJSONArray(RESULT_INFO);
+                    for (int i = 0;i < ja.size();i++)res.add(ja.getObject(i, MessageInfo.class));
+                    callback.onSuccess(res);
+                } else {
+                    callback.onFailed("0", resObj.getString(RESULT_MSG));
+                }
+            }
+        }, true, true);
+    }
+
+    @Override
+    public void getToken(String appid, String appSerect,final CommCallback<String> callback) {
+        String url = AppConfig.server + API_GET_TOKEN;
+
+        Map<String, String> headers = new HashMap<>(1);
+        headers.put(HEADER_CONTENT_TYPE, "application/x-www-form-urlencoded; charset=utf-8");
+
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put(CODE_APPID, appid);
+        jsonObject.put(CODE_APPSECRET, appSerect);
+
+        HttpClientBase.getInstance().execute(url, headers, jsonObject, new HttpClientBase.JoyHttpCallback() {
+            @Override
+            public void onResponse(String response, int code, String errorMsg) {
+                if (code != 0) {
+                    Log.e(TAG, "get token failed : code = " + code + ", errorMsg = " + errorMsg);
+                    if (callback != null) {
+                        callback.onFailed("" + code, errorMsg);
+                    }
+                    return;
+                }
+
+                if (callback == null) {
+                    return;
+                }
+
+                JSONObject resObj = JSONObject.parseObject(response);
+                int code1 = resObj.getIntValue(RESULT_CODE);
+                if (code1 == 1){
+                    callback.onSuccess(resObj.getString(CODE_ACC_TOKEN));
                 } else {
                     callback.onFailed("0", resObj.getString(RESULT_MSG));
                 }

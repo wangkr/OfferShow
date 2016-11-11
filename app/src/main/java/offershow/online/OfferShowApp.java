@@ -67,6 +67,14 @@ public class OfferShowApp extends Application {
         set("firstUse", false);
     }
 
+    public static void saveAccessToken(String s){
+        set("access_token", s);
+    }
+
+    public static String getAccessToken() {
+        return get("access_token", "");
+    }
+
     @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     public static void apply(SharedPreferences.Editor editor) {
         if (sIsAtLeastGB) {

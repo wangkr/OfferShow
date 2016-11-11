@@ -33,6 +33,6 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/dark_line_size"
-        android:background="@color/colorPrimary" />
+        android:background="@color/colorAccent" />
 
 </LinearLayout>

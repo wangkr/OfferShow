@@ -7,4 +7,6 @@ package offershow.online.config;
 public interface Extras {
     String EXTRA_NEWOFFER_CONTENT = "new_offer_content";
     String EXTRA_QUERY_STRING = "query_string";
+    String EXTRA_OFFER_INFO = "offer_info";
+    String EXTRA_FROM_DB = "fromDb";
 }
