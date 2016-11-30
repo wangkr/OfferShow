@@ -10,3 +10,5 @@ OfferShow是根据校招薪水爆料网站(<a href="http://www.offershow.online:
 本地搜索优化，包括关键词提示，搜索历史推荐等。
 ####项目已开源,欢迎大家拍砖,拍砖邮箱wangkrhust@163.com或者直接到git上提出意见，或者自己动手哈！
 Github:<a href="https://github.com/wangkr/OfferShow">https://github.com/wangkr/OfferShow</a>
+
+###另，欢迎star!!
